@@ -2,150 +2,45 @@
 <html lang="pt-br">
 
 <head>
-
-<meta charset="UTF-8">
-
-<title>Controle de Turmas</title>
-
-<link rel="stylesheet" href="css/style.css">
-
+    <meta charset="UTF-8">
+    <title>Controle de Turmas</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 
 <body>
 
-
-<div class="login-box">
-
-
-<div class="logo-area">
-
-<h2>
-<i class="fa-solid fa-chalkboard-user"></i>
-
-Controle de Turmas
-
-</h2>
-
-</div>
-
-
-
-<form id="formLogin">
-
-
-<label>Email</label>
-
-<input 
-id="email"
-type="email"
-required>
-
-
-
-<label>Senha</label>
-
-<input
-id="senha"
-type="password"
-required>
-
-
-
-<button class="btn-principal">
-
-Entrar
-
-</button>
-
-
-</form>
-
-
-
-<br>
-
-
-<button 
-class="btn-cadastrar"
-onclick="abrirCadastro()">
-
-Cadastrar Professor
-
-</button>
-
-
-
-</div>
-
-
-
-
-
-<div id="modalProfessor" class="modal oculto">
-
-
-<div class="janela">
-
-
-<h2>
-Novo Professor
-</h2>
-
-
-
-<input 
-id="nomeProfessor"
-placeholder="Nome">
-
-
-
-<input
-id="emailProfessor"
-placeholder="Email">
-
-
-
-<input
-id="senhaProfessor"
-type="password"
-placeholder="Senha">
-
-
-
-
-
-<button
-class="btn-principal"
-onclick="cadastrarProfessor()">
-
-Cadastrar
-
-</button>
-
-
-
-
-<button onclick="fecharCadastro()">
-
-Cancelar
-
-</button>
-
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<script src="js/login.js"></script>
-
-
+    <div class="login-box">
+        <div class="logo-area">
+            <h2>
+                <i class="fa-solid fa-chalkboard-user"></i>Controle de Turmas
+            </h2>
+        </div>
+
+        <form id="formLogin">
+
+            <label>Email</label>
+            <input id="email" type="email" required>
+            <label>Senha</label>
+            <input id="senha" type="password" required>
+            <button class="btn-principal">Entrar</button>
+        </form>
+
+        <br>
+        <button class="btn-cadastrar" onclick="abrirCadastro()">Cadastrar Professor</button>
+    </div>
+
+    <div id="modalProfessor" class="modal oculto">
+        <div class="janela">
+            <h2>Novo Professor</h2>
+            <input id="nomeProfessor" placeholder="Nome">
+            <input id="emailProfessor" placeholder="Email">
+            <input id="senhaProfessor" type="password" placeholder="Senha">
+            <button class="btn-principal" onclick="cadastrarProfessor()">Cadastrar</button>
+            <button onclick="fecharCadastro()">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
 </body>
 
 </html>

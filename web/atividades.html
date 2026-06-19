@@ -1,198 +1,68 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-
-<meta charset="UTF-8">
-
-<title>Atividades</title>
-
-<link rel="stylesheet"
-href="css/style.css">
-
+    <meta charset="UTF-8">
+    <title>Atividades</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 
 <body>
 
-
-
-<div class="container">
-
-
-<nav>
-
-
-<div class="logo-area">
-
-<h2>
-<i class="fa-solid fa-book"></i>
-Atividades
-</h2>
-
-</div>
-
-
-
-<ul>
-
-
-<li class="ativo">
-
-Atividades
-
-</li>
-
-
-<li onclick="logout()">
-
-Sair
-
-</li>
-
-
-</ul>
-
-
-</nav>
-
-
-
-
-<main>
-
-
-
-<div class="topo">
-
-
-<div>
-
-<h2>
-Atividades da turma
-</h2>
-
-
-<p>
-Controle de atividades
-</p>
-
-
-</div>
-
-
-
-<button
-class="btn-principal"
-onclick="abrirModal()">
-
-Nova Atividade
-
-</button>
-
-
-</div>
-
-
-
-
-<table>
-
-
-<thead>
-
-<tr>
-
-<th>ID</th>
-
-<th>Descrição</th>
-
-<th>Prazo</th>
-
-<th>Ações</th>
-
-</tr>
-
-
-</thead>
-
-
-
-<tbody id="listaAtividades">
-
-
-</tbody>
-
-
-
-</table>
-
-
-
-
-</main>
-
-
-</div>
-
-
-
-
-
-<div id="modal"
-class="modal oculto">
-
-
-<div class="janela">
-
-
-<h2>
-Nova Atividade
-</h2>
-
-
-<input
-id="descricao"
-placeholder="Descrição">
-
-
-<input
-id="fim"
-type="datetime-local">
-
-
-
-<button
-class="btn-principal"
-onclick="cadastrarAtividade()">
-
-Salvar
-
-</button>
-
-
-
-<button onclick="fecharModal()">
-
-Cancelar
-
-</button>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<script src="js/atividades.js"></script>
-
-
+    <div class="container">
+        <nav>
+            <div class="logo-area">
+                <h2>
+                    <i class="fa-solid fa-book"></i>
+                    Atividades
+                </h2>
+            </div>
+
+            <ul>
+                <li class="ativo">Atividades</li>
+                <li onclick="logout()">Sair</li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="topo">
+                <div>
+                    <h2>
+                        Atividades da turma
+                    </h2>
+                    <p>Controle de atividades</p>
+                </div>
+                <button class="btn-principal" onclick="abrirModal()">Nova Atividade</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Descrição</th>
+                        <th>Prazo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="listaAtividades"></tbody>
+            </table>
+        </main>
+    </div>
+
+    <div id="modal" class="modal oculto">
+        <div class="janela">
+            <h2>Nova Atividade</h2>
+
+            <input id="descricao" placeholder="Descrição">
+            <input id="fim" type="datetime-local">
+
+            <button class="btn-principal" onclick="cadastrarAtividade()">Salvar</button>
+
+            <button onclick="fecharModal()">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="js/atividades.js"></script>
 </body>
-
 
 </html>

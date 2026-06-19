@@ -1,316 +1,181 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-
 body{
-
     font-family:'Inter',sans-serif;
     background:#f8f8f8;
     color:#222;
-
 }
-
 
 .container{
-
     display:flex;
     height:100vh;
-
 }
 
-
-/* MENU */
-
 nav{
-
     width:260px;
     height:100vh;
     background:#111;
     color:white;
     padding:20px 0;
-
 }
-
 
 .logo-area{
-
     padding:20px;
     border-bottom:1px solid #333;
-
 }
 
-
 .logo-area h2{
-
     display:flex;
     gap:10px;
     align-items:center;
-
 }
-
-
 
 nav ul{
-
     list-style:none;
     margin-top:30px;
-
 }
 
-
-
 nav li{
-
     padding:15px 25px;
     cursor:pointer;
     color:#bbb;
-
 }
-
 
 nav li:hover,
 nav .ativo{
-
     background:#220000;
     color:#e60000;
     border-left:5px solid #e60000;
-
 }
-
-
-
-/* CONTEUDO */
-
 
 main{
-
     flex:1;
     padding:40px;
-
 }
 
-
-
 .topo{
-
     display:flex;
     justify-content:space-between;
     align-items:center;
     margin-bottom:25px;
-
 }
-
-
 
 h2{
-
     color:#111;
-
 }
-
-
 
 p{
-
     color:#777;
-
 }
-
-
-
-
-/* BOTÕES */
-
 
 button,
 .btn-principal{
-
-
     border:none;
     cursor:pointer;
     border-radius:6px;
     padding:10px 18px;
     font-weight:600;
-
 }
-
-
 
 .btn-principal{
-
     background:#c90000;
     color:white;
-
 }
-
-
 
 .btn-principal:hover{
-
     background:#a00000;
-
 }
 
-
-
-/* TABELA */
-
-
 table{
-
     width:100%;
     background:white;
     border-collapse:collapse;
     box-shadow:0 3px 10px #ddd;
-
 }
 
-
 th{
-
     background:#111;
     color:white;
     padding:15px;
     text-align:left;
-
 }
-
-
 
 td{
-
     padding:15px;
     border-bottom:1px solid #eee;
-
 }
-
-
 
 td button{
-
     background:#eee;
     margin-right:8px;
-
 }
-
 
 td button:hover{
-
     background:#ddd;
-
 }
 
-
-
-
-/* MODAL */
-
-
 .modal{
-
     position:fixed;
     inset:0;
     background:#0009;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
 }
-
-
 
 .oculto{
-
     display:none;
-
 }
 
-
-
 .janela{
-
     background:white;
     padding:30px;
     width:400px;
     border-radius:10px;
-
 }
 
-
-
 input{
-
     width:100%;
     padding:12px;
     margin:15px 0;
-
     border:1px solid #ccc;
     border-radius:6px;
-
 }
 
-
-
-/* LOGIN */
-
-
 .login-box{
-
     width:400px;
     background:white;
     padding:40px;
     border-radius:10px;
-
     position:absolute;
     top:50%;
     left:50%;
-
     transform:translate(-50%,-50%);
-
     box-shadow:0 10px 30px #bbb;
-
 }
 
-
 .login-box button{
-
     width:100%;
-
 }
 
 .btn-cadastrar{
-
 width:100%;
-
 background:white;
-
 color:#c90000;
-
 border:2px solid #c90000;
-
 padding:10px;
-
 border-radius:6px;
-
 font-weight:600;
-
 cursor:pointer;
-
 }
 
-
-
 .btn-cadastrar:hover{
-
 background:#c90000;
-
 color:white;
-
 }
