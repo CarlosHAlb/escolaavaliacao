@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Turmas</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<nav>
+
+
+<div class="logo-area">
+
+<h2>
+<i class="fa-solid fa-school"></i>
+Turmas
+</h2>
+
+</div>
+
+
+
+<ul>
+
+
+<li class="ativo">
+<i class="fa-solid fa-users"></i>
+Turmas
+</li>
+
+
+<li onclick="logout()">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Sair
+
+</li>
+
+
+</ul>
+
+
+</nav>
+
+
+
+
+<main>
+
+
+<div class="topo">
+
+
+<div>
+
+<h2>
+Minhas Turmas
+</h2>
+
+<p>
+Gerencie suas turmas
+</p>
+
+
+</div>
+
+
+
+<button
+class="btn-principal"
+onclick="abrirModal()">
+
+
+<i class="fa-solid fa-plus"></i>
+
+Nova Turma
+
+
+</button>
+
+
+</div>
+
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Nome</th>
+<th>Ações</th>
+
+</tr>
+
+</thead>
+
+
+<tbody id="listaTurmas">
+
+
+</tbody>
+
+
+</table>
+
+
+
+</main>
+
+
+
+</div>
+
+
+
+<div id="modal" class="modal oculto">
+
+
+<div class="janela">
+
+
+<h2>Cadastrar Turma</h2>
+
+
+<input
+id="nomeTurma"
+placeholder="Nome da turma">
+
+
+<button
+class="btn-principal"
+onclick="cadastrarTurma()">
+
+Cadastrar
+
+</button>
+
+
+<button
+onclick="fecharModal()">
+
+Cancelar
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+<script src="js/turmas.js"></script>
+
+
+</body>
+
+</html>
